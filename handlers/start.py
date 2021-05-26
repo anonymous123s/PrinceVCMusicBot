@@ -10,17 +10,15 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
     & ~ filters.edited
 )
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAEJlR9giNcPJke9BKSpQhP0zaOgf3z-KQACAQADFlyeOsyiWLhvkgt7HwQ")
     await message.reply_text(
         f"""⚜️<b>Hi {message.from_user.first_name}!⚜️
 
-⚜️ I am PRINCE_MUSIC_BOT VC Music Player, an open-source bot that lets you play music in your Telegram groups.
-Maintained by @Prince_3011 ❤
 
-⚜️ For source code Join our support group @PRINCE_MUSIC_CHATS.
+Maintained by @xtheanonymous 💥
 
-⚜️ Use the buttons below to know more about me.
- </b>""",
+⚜️ Join our group @Anime_dynasty 
+
+
       
        
         reply_markup=InlineKeyboardMarkup(
@@ -35,16 +33,11 @@ Maintained by @Prince_3011 ❤
                         "💬 Group", url="https://t.me/PRINCEBOTSUPPORT"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/princebots"
+                        "🔊 Group", url="https://t.me/@Anime_dynasty"
                     ),
                     InlineKeyboardButton(
-                        "😍 Credit", url="https://t.me/prince_3011"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "📒TUTORIAL SCREENSHOT", url="https://t.me/joinchat/Ng0hJTU9SxcyNjdl"
-                    ) 
+                        " Credit", url="https://t.me/xtheanonymous"
+              
                 ]
             ]
         )
@@ -60,21 +53,7 @@ async def start(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/princebots"
-                    )
-                ],    
-                [    
-                    InlineKeyboardButton(
-                        "✅ Yes", switch_inline_query_current_chat=""
-                    ),
-                    InlineKeyboardButton(
-                        "No ❌", callback_data="close"
-                    )
-                ]
-            ]
-        )
-    )
+                    
 
 @Client.on_message(
     filters.command("help")
@@ -109,8 +88,7 @@ async def help(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/princebots"
+                    
                     )
                 ]
             ]
