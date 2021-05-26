@@ -16,53 +16,6 @@ async def start_(client: Client, message: Message):
 
 Maintained by @xtheanonymous 💥
 
-⚜️ Join our group @Anime_dynasty 
-
-
-      
-       
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "Command", url="https://t.me/PRINCEBOTS/4",
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/PRINCEBOTSUPPORT"
-                    ),
-                    InlineKeyboardButton(
-                        "🔊 Group", url="https://t.me/@Anime_dynasty"
-                    ),
-                    InlineKeyboardButton(
-                        " Credit", url="https://t.me/xtheanonymous"
-              
-                ]
-            ]
-        )
-    )
-@Client.on_message(
-    filters.command("start")
-    & filters.group
-    & ~ filters.edited
-)
-async def start(client: Client, message: Message):
-    await message.reply_text(
-        "💁🏻‍♂️ Do you want to search for a YouTube video?",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    
-
-@Client.on_message(
-    filters.command("help")
-    & filters.group
-    & ~ filters.edited
-)
-async def help(client: Client, message: Message):
-    await message.reply_text(
-        f"""<b>Hi {message.from_user.first_name}!
 
 ⚜️Users Commands⚜️
 /play <song name> - play song you requested
