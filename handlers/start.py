@@ -19,7 +19,7 @@ Maintained by @xtheanonymous 💥
 ⚜️ Join our group @Anime_dynasty 
 
 
-      
+ """     
        
         reply_markup=InlineKeyboardMarkup(
             [
@@ -30,10 +30,10 @@ Maintained by @xtheanonymous 💥
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/PRINCEBOTSUPPORT"
+                        "Animebot", url="https://t.me/Animedownloaderbbot"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Group", url="https://t.me/@Anime_dynasty"
+                        "🔊 Group", url="https://t.me/Anime_dynasty"
                     ),
                     InlineKeyboardButton(
                         " Credit", url="https://t.me/xtheanonymous"
